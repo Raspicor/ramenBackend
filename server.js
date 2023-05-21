@@ -49,5 +49,5 @@ const setOrderStatus = (orderNumber, status) => {
 };
 
 app.get('*', function (req, res) {
-    req.sendFile(path.join(__dirname, '/ramen/build/index.html'));
+    res.sendFile(path.join(__dirname, '/ramen/build/index.html'));
 });
