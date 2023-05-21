@@ -1,11 +1,12 @@
 FROM node:16-alpine
 
-WORKDIR /app
+WORKDIR /ramenBackend
 
-COPY package.json package-lock.json ./
+COPY package.json .
+RUN npm install
 
-RUN npm ci
+COPY . .
 
-COPY server.js .
+WORKDIR /ramenBackend/ramen/build
 
-ENTRYPOINT [ "node", "server.js" ]
+CMD ["node", "/ramenBackend/server.js"]
