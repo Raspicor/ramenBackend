@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(3000, () => {
-    console.log("Server is running on http://localhost:3000");
+    console.log("Server is running on 43.200.164.186:3000");
 });
 
 // 주문하면 주문 번호와 주문 상태를 응답하도록 함.
