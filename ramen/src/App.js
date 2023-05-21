@@ -34,16 +34,15 @@ function App() {
   return (
     <div className="app">
       <header>
-        <h1>Ramen</h1>
+        <h1>라면 주문 및 상태 조회</h1>
       </header>
 
-      <h1>라면 주문 및 상태 조회</h1>
       <div className="buttonContainer">
         <button className="orderRamen" onClick={orderRamen}>
           주문 전송
         </button>
         <div className="inputContainer">
-          <label className="text">주문 번호 입력:</label>
+          <label className="text">조회할 주문 번호</label>
           <input
             type="number"
             id="orderNumberInput"
