@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require('path');
 const cors = require("cors");
 const app = express();
 
@@ -8,9 +9,14 @@ let orders = new Object();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, '/ramen/build')));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/ramen/build/index.html'));
+});
 
 app.listen(3000, () => {
-    console.log("Server is running on 43.200.164.186:3000");
+    console.log("Server is running on http://43.200.164.186:3000.");
+    
 });
 
 // 주문하면 주문 번호와 주문 상태를 응답하도록 함.
@@ -46,7 +52,6 @@ const setOrderStatus = (orderNumber, status) => {
     orders[orderNumber] = status;
 };
 
-const setOrders = (nums, status) => {
-    orders['orderNumber'] = nums;
-    orders['orderStatus'] = status;
-}
+app.get('*', function (req, res) {
+    응답.sendFile(path.join(__dirname, '/ramen/build/index.html'));
+});

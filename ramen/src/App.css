@@ -1,0 +1,83 @@
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.orderRamen, .checkOrder {
+  margin-bottom: 10px;
+}
+
+.text {
+  margin: 20px;
+}
+
+.orderContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.orderRamen {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.orderRamen:hover {
+  background-color: #3367d6;
+}
+
+.orderNumberInput {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.checkOrder {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fbbc05;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkOrder:hover {
+  margin-top: 20px;
+  background-color: #e8a500;
+}
+
+.statusContainer {
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
