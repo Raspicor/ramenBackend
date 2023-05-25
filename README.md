@@ -12,8 +12,8 @@ client 화면은 간단하게 2가지 버튼 (주문 전송, 상태 문의)를 �
 b. server 구현은 on-premise, cloud에서 서비스합니다. 
 container를 사용하고, runtime은 docker로 합니다. 
  ``` 
-Front-End : React.js
-Back-End : Node.js
-Service : AWS EC2
-Runtime : Docker
+Front-End : React.js <br/>
+Back-End : Node.js <br/>
+Service : AWS EC2 <br/>
+Runtime : Docker <br/>
 ##### 문제 출처 : 알파서클 과제 면접
